@@ -273,7 +273,7 @@ a:hover.enlace{
 		position: relative;
 		perspective: 1000px;
 		transition: 1s;
-		margin-left: 55px;
+		margin-left: 35px;
 	}
 	.book{
 		position: absolute;
