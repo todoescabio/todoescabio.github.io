@@ -1,0 +1,325 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    /* position: relative; */
+	display: flex;
+	justify-content: center;
+    background-color: #f5b338;
+    /* bottom: -100px; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 0px;
+    padding: 1em 0;
+    margin-top: auto;
+    
+
+}
+
+
+/* p{
+	margin-top: 10px;
+	font-size: 13px;
+	text-align: justify;
+} */
+footer a {
+	color: black;
+    text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	
+}
+
+footer p{
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+
+}
+.pie{
+	display: flex;
+	flex-wrap: nowrap;
+	line-height: 1.2;   
+	font-size: 15pt;
+}
+
+a:hover.enlace{
+	color:rgb(0, 253, 253);
+
+	/* padding: 10px;
+	margin: 50px; */
+	/* border: 3px solid green; */
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+.container, .book-content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container{
+	width: 100%;
+	/* height: 100vh; */
+	flex-direction: column;
+	background: black;
+
+}
+.portada{
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+
+}
+.portada p{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: xx-large;
+	text-align: center;
+}
+.presentacion{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	/* margin-bottom: 20px; */
+}
+.presentacion>img{
+	width: 100%;
+	height: auto;
+}
+.presentacion p{
+	font-size: 1.5em;
+	/* font-family: "New Amsterdam", sans-serif; */
+	font-family: "Roboto", sans-serif;
+	text-align: center;
+	color: white;
+}
+.whatsapp{
+	width: 50px;
+	height: 50px;
+	background-image: url('');
+	float: right;
+	position: fixed;
+}
+.book-content{
+	width: 65%;
+	min-width: 250px;
+	max-width: 400px;
+	height: 330px;
+	position: relative;
+	perspective: 1000px;
+	transition: 1s;
+	margin-left: 55px;
+}
+.book{
+	position: absolute;
+	width: 65%;
+	height: 100%;
+	transition: 1s;
+	transform-style: preserve-3d;
+	transform-origin: left; 
+}
+.face-front, .face-back, .face-back1{
+	width: 100%;
+	height: 100%;
+	/* background: white; */
+	/* padding: 15px; */
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.face-back1{
+	background-image: url('/img/hoja1.webp');
+	background-size: 100% 100%;
+}
+.face-front{
+	box-shadow: inset 3px 0px 20px -7px black;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+.face-back, .face-back1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateZ(-1px) rotateY(180deg);
+	box-shadow: inset -3px 1px 20px -7px black;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+.face-back>div{
+	background-image: url('../img/hoja1.webp');
+	background-size: 100% 100%;
+}
+#portada{
+	background: url('../img/bookPortada.webp');
+}
+#portada-back{
+	background: url('../img/contratapa.webp');
+	background-size: 100% 100%;
+}
+#portada, #portada-back{
+	background-size: 100% 100%;
+}
+#hoja-1{
+	background-image: url('../img/hoja1.webp');
+	background-size: 100% 100%;
+}
+#hoja-2{
+	background-image: url('../img/hoja2.webp');
+	background-size: 100% 100%;
+}
+#hoja-3{
+	background-image: url('../img/hoja3.webp');
+	background-size: 100% 100%;
+}
+#hoja-4{
+	background-image: url('../img/hoja4.webp');
+	background-size: 100% 100%;
+}
+#hoja-5{
+	background-image: url('../img/hoja5.webp');
+	background-size: 100% 100%;
+}
+#hoja-6{
+	background-image: url('../img/hoja6.webp');
+	background-size: 100% 100%;
+}
+#hoja-7{
+	background-image: url('../img/hoja7.webp');
+	background-size: 100% 100%;
+}
+#hoja-8{
+	background-image: url('../img/hoja8.webp');
+	background-size: 100% 100%;
+}
+#hoja-9{
+	background-image: url('../img/hoja9.webp');
+	background-size: 100% 100%;
+}
+#hoja-10{
+	background-image: url('../img/hoja10.webp');
+	background-size: 100% 100%;
+}
+.logo-whatsapp{
+    position: fixed;
+    top: 92%;
+    right: 0;
+    transform: translateY(-95%);
+    z-index: 1000; /* Asegura que el logo esté por encima de otros elementos */
+  }
+.portadappal{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.portadappal>img{
+	width: 100%;
+	height: auto;
+}
+.catalogo, .contacto{
+	display: flex;
+	justify-content: center;
+}
+.catalogo>img{
+	width: 80%;
+}
+.contacto{
+	margin-bottom: 20%;
+}
+.contacto>img{
+	width: 90%;
+}
+
+
+
+/* Clases que se agregaran con Javascript */
+
+.trnsf{
+	transform: translateX(55px);
+}
+.trnsf-reset{
+	transform: translateX(0px);
+}
+
+/* @media para hacer el texto responsivo */
+/* 
+@media screen and (max-width: 800px){
+	p{
+		font-size: 12px;
+	}
+} */
+
+/*PC*/
+@media screen and (min-width:960px){
+
+	.hoja-1,.hoja-2,.hoja-3,.hoja-4,.hoja-5,.hoja-6,.hoja-7,.hoja-8,.hoja-9,.hoja-10{
+		background-size: contain;
+		
+
+	}
+	.chops{
+		width: 370px;
+		height: 370px;
+	}
+	.book-content{
+		width: 65%;
+		min-width: 500px;
+		max-width: 800px;
+		height: 660px;
+		position: relative;
+		perspective: 1000px;
+		transition: 1s;
+		margin-left: 55px;
+	}
+	.book{
+		position: absolute;
+		width: 65%;
+		height: 100%;
+		transition: 1s;
+		transform-style: preserve-3d;
+		transform-origin: left; 
+	}
+	.pie{
+		font-size: 20pt;
+		font-weight: bold;
+	}
+}
+/*Tablet*/
+@media screen and (min-width:480px) and (max-width:960px){
+	.chops{
+		width: 230px;
+		height: 230px;
+	}
+	.pie{
+		font-size: 18pt;
+	}
+
+}
+
+
+/*Movil*/
+@media (min-width:200px) and (max-width:480px){
+	#portada, #portada-back{
+
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	.face-back1, .face-front,.face-back{
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	#hoja-1,#hoja-2,#hoja-3,#hoja-4,#hoja-5,#hoja-6,#hoja-7,#hoja-8,#hoja-9,#hoja-10{
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	.chops{
+		width: 130px;
+		height: 130px;
+	}
+
+}
+
