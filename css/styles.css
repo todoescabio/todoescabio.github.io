@@ -216,8 +216,8 @@ a:hover.enlace{
 }
 .logo-whatsapp{
     position: fixed;
-    top: 88%;
-    right: 45px;
+    top: 86%;
+    right: 50px;
     transform: translateY(-95%);
     z-index: 1000; /* Asegura que el logo esté por encima de otros elementos */
   }
