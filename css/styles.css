@@ -57,6 +57,11 @@ a:hover.enlace{
 	/* border: 3px solid green; */
 	font-family:Verdana, Geneva, Tahoma, sans-serif;
   }
+  .flechad{
+	margin-right: 274px;
+	margin-top: -74px;
+
+  }
 .container, .book-content{
 	display: flex;
 	justify-content: center;
