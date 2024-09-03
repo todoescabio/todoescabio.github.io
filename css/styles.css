@@ -57,11 +57,16 @@ a:hover.enlace{
 	/* border: 3px solid green; */
 	font-family:Verdana, Geneva, Tahoma, sans-serif;
   }
-  .flechad{
+  /* .flechad{
 	margin-right: 274px;
 	margin-top: -74px;
 
   }
+  .flechai{
+	margin-right: 274px;
+	margin-top: -74px;
+	z-index: -5;
+  } */
 .container, .book-content{
 	display: flex;
 	justify-content: center;
@@ -212,7 +217,7 @@ a:hover.enlace{
 .logo-whatsapp{
     position: fixed;
     top: 92%;
-    right: 0;
+    right: 50px;
     transform: translateY(-95%);
     z-index: 1000; /* Asegura que el logo esté por encima de otros elementos */
   }
@@ -292,6 +297,23 @@ a:hover.enlace{
 		font-size: 20pt;
 		font-weight: bold;
 	}
+	.flechad{
+		margin-right: 662px;
+		margin-top: -74px;
+	
+	  }
+	.flechai{
+		position: relative;
+		z-index: -5;
+		margin-left: -607px;
+		margin-top: -74px;
+	  }
+	  .flechad> dotlottie-player{
+		width: 70px;
+		height: 70px;
+
+	}  
+	  
 }
 /*Tablet*/
 @media screen and (min-width:480px) and (max-width:960px){
@@ -325,6 +347,24 @@ a:hover.enlace{
 		width: 130px;
 		height: 130px;
 	}
+	.flechad{
+		margin-right: 260px;
+		margin-top: -74px;
+	
+	  }
+	
+	.flechad> dotlottie-player{
+		width: 50px;
+		height: 50px;
+
+	}
+	.flechai{
+		position: relative;
+		z-index: -5;
+		margin-left: -220px;
+		margin-top: -74px;
+	
+	  }
 
 }
 
