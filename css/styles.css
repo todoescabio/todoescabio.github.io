@@ -6,6 +6,7 @@
 body{
     display: flex;
     flex-direction: column;
+	
 }
 footer {
     /* position: relative; */
@@ -77,6 +78,7 @@ a:hover.enlace{
 	/* height: 100vh; */
 	flex-direction: column;
 	background: black;
+	overflow: hidden;
 
 }
 .portada{
@@ -377,6 +379,16 @@ a:hover.enlace{
 		margin-top: -74px;
 	
 	  }
+	  .book-content{
+		width: 65%;
+		min-width: 250px;
+		max-width: 400px;
+		height: 280px;
+		position: relative;
+		perspective: 1000px;
+		transition: 1s;
+		margin-left: 75px;
+	}
 
 }
 
