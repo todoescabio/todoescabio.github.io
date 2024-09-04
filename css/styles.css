@@ -33,14 +33,14 @@ footer a {
 	color: black;
     text-decoration: none;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 1em;
+	font-size: 1.2em;
 	
 }
 
 footer p{
 	color: black;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 1em;
+	font-size: 1.2em;
 
 }
 .pie{
@@ -51,12 +51,13 @@ footer p{
 }
 
 a:hover.enlace{
-	color:rgb(0, 253, 253);
+	color:rgb(83, 3, 94);
 
 	/* padding: 10px;
 	margin: 50px; */
 	/* border: 3px solid green; */
-	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	font-family: "Oleo Script", system-ui;
+	font-size: 1.2em;
   }
   /* .flechad{
 	margin-right: 274px;
@@ -319,8 +320,8 @@ a:hover.enlace{
 	  .flechad{
 		width: 70px;
 		height: 70px;
-
 	}
+
 	dotlottie-player.flechai{
 		width: 80px;
 		height: 80px;
@@ -336,6 +337,34 @@ a:hover.enlace{
 	.pie{
 		font-size: 18pt;
 	}
+	
+	.flechai{
+		position: relative;
+		z-index: -5;
+		margin-left: -330px;
+		margin-top: -38px;
+	
+	  }
+	  .flechad{
+		margin-right: 384px;
+		margin-top: -38px;
+	
+	  }
+	  dotlottie-player.flechai{
+		width: 85px;
+		height: 85px;
+	} 
+	dotlottie-player.flechad{
+		width: 80px;
+		height: 80px;
+
+	}
+	.enlace{
+		font-family: "Oleo Script", system-ui;
+
+		color:rgb(238, 3, 255);
+	}
+
 
 }
 
